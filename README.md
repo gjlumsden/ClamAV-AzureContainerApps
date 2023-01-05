@@ -64,3 +64,6 @@ Once these steps have been successfully completed, drop files in to the "upload"
 * [ClamAV on Dockerhub](https://hub.docker.com/r/clamav/clamav)
 * [User Secrets](https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-7.0&tabs=windows)
 * [EICAR test file](https://en.wikipedia.org/wiki/EICAR_test_file)
+* [Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/overview)
+* [Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview)
+* [Scanning Blob storage for viruses with Azure Functions and Docker](https://peterrombouts.nl/2019/04/15/scanning-blob-storage-for-viruses-with-azure-functions-and-docker/)
