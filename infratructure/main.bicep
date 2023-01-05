@@ -6,7 +6,7 @@ param logAnalyticsWorkspaceId string = ''
 param logAnalyticsSharedKey string = ''
 
 var environmentName = '${appNamePrefix}-caenv-${location}-${uniqueString(resourceGroup().id)}'
-var containerAppName = '${appNamePrefix}-capp-${location}-${uniqueString(resourceGroup().id)}'
+var containerAppName = '${appNamePrefix}-capp-${uniqueString(resourceGroup().id)}'
 var vnetName = '${appNamePrefix}-vnet-${location}-${uniqueString(resourceGroup().id)}'
 var subnetName = 'capp-subnet'
 var nsgName = '${subnetName}-nsg'
