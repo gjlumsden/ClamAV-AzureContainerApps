@@ -5,9 +5,9 @@ param logAnalyticsWorkspaceId string = ''
 @secure()
 param logAnalyticsSharedKey string = ''
 
-var environmentName = '${appNamePrefix}-caenv-${location}'
-var containerAppName = '${appNamePrefix}-capp-${location}'
-var vnetName = '${appNamePrefix}-vnet-${location}'
+var environmentName = '${appNamePrefix}-caenv-${location}-${uniqueString(resourceGroup().id)}'
+var containerAppName = '${appNamePrefix}-capp-${location}-${uniqueString(resourceGroup().id)}'
+var vnetName = '${appNamePrefix}-vnet-${location}-${uniqueString(resourceGroup().id)}'
 var subnetName = 'capp-subnet'
 var nsgName = '${subnetName}-nsg'
 
