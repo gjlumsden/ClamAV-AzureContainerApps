@@ -3,7 +3,7 @@ param appNamePrefix string = 'avscan'
 param containerExposedPort int = 3310
 param logAnalyticsWorkspaceId string = ''
 @secure()
-param logAnalyticsSharedKey string
+param logAnalyticsSharedKey string = ''
 
 var environmentName = '${appNamePrefix}-caenv-${location}'
 var containerAppName = '${appNamePrefix}-capp-${location}'
