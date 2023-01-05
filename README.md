@@ -45,7 +45,12 @@ The following instructions apply to getting started locally with Azure Functions
     }
     ```
 
-1. The output of the bicep deployment includes the FQDN of the container app that can be called from the Function App to perform an on-demand scan. Add a user secret with the key `AvScanEndpointUrl` and the value of the `fqdn` output from the Bicep deployment. You may add this to local.settings.json instead of user secrets if you wish.
+1. The output of the bicep deployment includes the FQDN of the container app that can be called from the Function App to perform an on-demand scan. Add a user secret with the key `AvScanEndpointUrl` and the value of the `fqdn` output from the Bicep deployment. You may add this to local.settings.json instead of user secrets if you wish. This should have the following format:
+
+    ```json
+    "AvScanEndpointUrl": "[unqiue-value].azurecontainerapps.io"
+    ```
+
 1. Add the following to either user secrets or local.settings.json:
 
    ```json
